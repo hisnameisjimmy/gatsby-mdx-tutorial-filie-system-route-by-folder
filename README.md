@@ -1,11 +1,9 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# Bug demo for File System Route API and multi-folder paths
+
+To reproduce:
+1. Run gatsby develop, navigate /portfolio and /blog
+2. Run gatsby build
+3. See error for mdx being null
 
 ## 🚀 Quick start
 
