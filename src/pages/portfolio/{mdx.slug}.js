@@ -31,7 +31,7 @@ export const query = graphql`
   query($id: String) {
     mdx(
       id: {eq: $id}
-      fileAbsolutePath: {regex: "/(/blog/)/"}
+      fileAbsolutePath: {regex: "/(/portfolio/)/"}
     ) {
       frontmatter {
         title

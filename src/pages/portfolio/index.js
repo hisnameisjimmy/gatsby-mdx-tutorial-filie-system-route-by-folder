@@ -4,12 +4,12 @@ import Layout from '../../components/layout'
 
 const BlogPage = ({ data }) => {
   return (
-    <Layout pageTitle="My Blog Posts">
+    <Layout pageTitle="My Portfolio Posts">
       {
         data.allMdx.nodes.map(node => (
           <article key={node.id}>
             <h2>
-              <Link to={`/blog/${node.slug}`}>
+              <Link to={`/portfolio/${node.slug}`}>
                 {node.frontmatter.title}
               </Link>
             </h2>
@@ -25,7 +25,7 @@ export const query = graphql`
   query {
     allMdx(
       sort: {fields: frontmatter___date, order: DESC},
-      filter: {fileAbsolutePath: {regex: "/(/blog/)/"}}
+      filter: {fileAbsolutePath: {regex: "/(/portfolio/)/"}}
     ) {
       nodes {
         frontmatter {
